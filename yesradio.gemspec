@@ -6,7 +6,6 @@ Gem::Specification.new do |s|
   s.authors = ["Claudio Baccigalupo"] 
   s.email = %q{claudiob@gmail.com} 
   # s.date = s.date = Date.today.to_s
-  s.date = q{2009-09-15}
   s.summary = %q{Ruby library for Yes.com radio Web Services (http://api.yes.com).}
   s.description = %q{YesRadio makes available as a ruby gem the method exposed by Yes.com API to retrieve songs broadcast by thousands of radios.}
   s.files = Dir.glob('**/*')
