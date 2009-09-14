@@ -2,21 +2,21 @@
 
 Ruby gem to access Yes.com API
 
+<a name="rubygem_install" />
 ## Installation ##
 
-    gem sources -a http://gems.github.com
-    sudo gem install yesradio
+    sudo gem install yesradio -s http://gems.github.com
 
 ## Examples ##
 
-- To show a list of 'Rock' stations
+### To show a list of 'Rock' stations ###
 
     require 'yesradio'
     query = Yesradio::StationsSearchCriteria.new
     query.match = "KWOF"
     result = Yesradio::search_stations query  
 
-- To show details of 'WFNX' radio
+### To show details of 'WFNX' radio ###
 
     require 'yesradio'
     Yesradio::match_station "WFNX"
