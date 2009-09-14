@@ -14,5 +14,5 @@ Gem::Specification.new do |s|
   s.rubyforge_project = %q{yesradio}
   s.rubygems_version = %q{1.3.3}
   s.has_rdoc = true 
-  s.extra_rdoc_files = ["README"]
+  s.extra_rdoc_files = ["README.md"]
 end

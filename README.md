@@ -6,7 +6,7 @@ Ruby gem to access Yes.com API
 
     require 'yesradio'
     query = Yesradio::StationsSearchCriteria.new
-    query.match = "Rock"
+    query.match = "KWOF"
     result = Yesradio::search_stations query  
 
 - To show details of 'WFNX' radio
