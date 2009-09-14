@@ -22,7 +22,6 @@ module Yesradio
     station = Station.new
     station.elements.each do |name, type|
       new_value = get_element_child element, name.gsub('_', '/'), type
-      puts "Name: #{name}, Type: #{type}, Value: #{new_value}"
       station.instance_variable_set("@#{name}", new_value) unless new_value.nil?
     end
     station
@@ -50,7 +49,6 @@ module Yesradio
     url = Yesradio::YESRADIO_SERVER + "/station?type=xml"
     url = url + "&name=" + CGI::escape(name)
     uri = URI.parse(url)
-    puts "Url: #{url}"
     req = Net::HTTP::Get.new(uri.path + '?' + uri.query)
     res = Net::HTTP.start(uri.host, uri.port) { |http|
       http.request(req)
