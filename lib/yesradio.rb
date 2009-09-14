@@ -19,9 +19,6 @@ module Yesradio
   YESRADIO_SERVER = "http://api.yes.com/#{YESRADIO_VERSION}"
 
   def self.element_to_station(element)
-  # Example:
-  # require 'yesradio'
-  # Yesradio::match_station "WFNX"
     station = Station.new
     station.elements.each do |name, type|
       new_value = get_element_child element, name.gsub('_', '/'), type
@@ -31,11 +28,6 @@ module Yesradio
   end
 
   def self.search_stations(search_criteria)
-  # Example:
-  # require 'yesradio'
-  # query = Yesradio::StationsSearchCriteria.new
-  # query.match = "Rock"
-  # result = Yesradio::search_stations query  
     stations = Array.new
 
     url = Yesradio::YESRADIO_SERVER + "/stations?type=xml"
