@@ -2,6 +2,11 @@
 
 Ruby gem to access Yes.com API
 
+## Installation ##
+
+    gem sources -a http://gems.github.com
+    sudo gem install yesradio
+
 ## Examples ##
 
 - To show a list of 'Rock' stations
