@@ -100,7 +100,7 @@ module Yesradio
   # [+max+] How many songs to return (default is 10, max is 50).  
   #
   # == Examples
-  #     get_chart :genre => "Rock"
+  #     get_media :aid => 610471
   #--
   # Run test with http://api.yes.com/1/media?mid=12812281&type=xml
   # which returns an XML error (Yes.com's fault)
@@ -116,7 +116,7 @@ module Yesradio
   # [+max+] Maximum number of related songs to return (default is 20).
   #
   # == Examples
-  #     get_related :mid => 7040859
+  #     get_related :mid => 11586843
   #--
   def self.get_related(query_hash)
     self.search('Song', "related", "//api/array/songs", query_hash)

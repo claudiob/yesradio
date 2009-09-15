@@ -12,9 +12,7 @@ Ruby gem to access Yes.com API
 ### To show a list of 'Rock' stations ###
 
     require 'yesradio'
-    query = Yesradio::StationsSearchCriteria.new
-    query.match = "KWOF"
-    result = Yesradio::search_stations query  
+    Yesradio::search_stations :match => "Rock"
 
 ### To show details of 'WFNX' radio ###
 
@@ -30,6 +28,21 @@ Ruby gem to access Yes.com API
 
     require 'yesradio'
     Yesradio::get_recent "WFNX"
+
+### To show a chart of popular Rock songs ###
+
+    require 'yesradio'
+    Yesradio::get_chart :genre => "Rock"
+
+### To show a list of songs by artist Rihanna ###
+
+    require 'yesradio'
+    Yesradio::get_media :aid => 610471
+
+### To show a list of songs related to Umbrella (Rihanna) ###
+
+    require 'yesradio'
+    Yesradio::get_related :mid => 11586843
 
 
 ## History ##
