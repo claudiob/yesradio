@@ -1,9 +1,14 @@
-Feature: something something
-  In order to something something
-  A user something something
-  something something something
+Feature: Call Yes.com API using Ruby
+  In order to retrieve Yes.com data in Ruby code
+  programmers
+  want a Ruby interface to Yes.com API
 
-  Scenario: something something
-    Given inspiration
-    When I create a sweet new gem
-    Then everyone should see how awesome I am
+  Scenario: List Stations
+    Given nothing
+    When I look for 10 stations called "KEXP"
+    Then I should see a radio with name "KEXP" and market "Seattle - Tacoma, WA"
+
+  Scenario: List Stations Empty
+    Given nothing
+    When I look for 10 stations called "ABCDEFGH"
+    Then I should see nothing
