@@ -50,6 +50,9 @@ http://rdoc.info/projects/claudiob/yesradio
 
 ## History ##
 
+v0.1.1  2009/09/15
+        Fixed bug that made gem unusable (required inexistent file)
+
 v0.1.0  2009/09/15
         First release with all the actions and documentation on rdoc.info
 
