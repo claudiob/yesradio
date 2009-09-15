@@ -2,7 +2,6 @@
 
 Ruby gem to access Yes.com API
 
-<a name="rubygem_install" />
 ## Installation ##
 
     sudo gem install claudiob-yesradio -s http://gems.github.com
