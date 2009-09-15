@@ -6,7 +6,6 @@ require 'net/http'
 require 'rexml/document'
 
 require 'station'
-require 'stations_search_criteria'
 require 'song'
 
 module Yesradio
