@@ -11,13 +11,13 @@ Gem::Specification.new do |s|
   s.description = %q{YesRadio makes available as a ruby gem the method exposed by Yes.com API to retrieve songs broadcast by thousands of radios.}
   # s.files = Dir.glob('**/*')
   s.files = [
-  #    ".gitignore",
+       ".gitignore",
        "README.md",
        "lib/yesradio.rb",
        "lib/Rakefile.rb",
        "lib/main.rb",
        "lib/station.rb",
-       "lib/station_search_criteria.rb",
+       "lib/stations_search_criteria.rb",
        "lib/song.rb",
   ]
   s.homepage = %q{http://github.com/claudiob/yesradio}
