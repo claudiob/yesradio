@@ -50,6 +50,9 @@ http://rdoc.info/projects/claudiob/yesradio
 
 ## History ##
 
+v0.1.0  2009/09/15
+        First release with all the actions and documentation on rdoc.info
+
 v0.0.2  2009/09/15
         Added support for actions: chart, media, related.
         Added documentation through RDoc.
