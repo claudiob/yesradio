@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{yesradio}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Claudio Baccigalupo"]
@@ -22,9 +22,16 @@ Gem::Specification.new do |s|
      "README.md",
      "Rakefile",
      "VERSION",
+     "doc/created.rid",
+     "doc/fr_class_index.html",
+     "doc/fr_file_index.html",
+     "doc/fr_method_index.html",
+     "doc/index.html",
+     "doc/rdoc-style.css",
      "features/step_definitions/yesradio_steps.rb",
      "features/support/env.rb",
      "features/yesradio.feature",
+     "lib/item.rb",
      "lib/main.rb",
      "lib/song.rb",
      "lib/station.rb",
