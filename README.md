@@ -7,6 +7,10 @@ Ruby gem to access Yes.com API
 
     sudo gem install claudiob-yesradio -s http://gems.github.com
 
+## Documentation ##
+
+http://rdoc.info/projects/claudiob/yesradio
+
 ## Examples ##
 
 ### To show a list of 'Rock' stations ###

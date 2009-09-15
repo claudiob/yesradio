@@ -1,10 +1,6 @@
-#=============================================================================
-#
-# 2009 Claudio Baccigalupo
-#
-# Licensed under the Ruby License
-#
-#=============================================================================
+# Author::    Claudio Baccigalupo
+# Copyright:: Copyright (c) 2009 - see LICENSE file
+
 require 'item'
 module Yesradio
   class Station < Item
