@@ -31,7 +31,8 @@ Gem::Specification.new do |s|
      "lib/stations_search_criteria.rb",
      "lib/yesradio.rb",
      "test/test_helper.rb",
-     "test/yesradio_test.rb"
+     "test/yesradio_test.rb",
+     "yesradio.gemspec"
   ]
   s.has_rdoc = true
   s.homepage = %q{http://github.com/claudiob/yesradio}
