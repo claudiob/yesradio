@@ -50,6 +50,9 @@ http://rdoc.info/projects/claudiob/yesradio
 
 ## History ##
 
+v0.1.1  2009/09/17
+        Changed REXML with Nokogiri for XML parsing
+
 v0.1.1  2009/09/15
         Fixed bug that made gem unusable (required inexistent file)
 

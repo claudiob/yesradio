@@ -12,6 +12,7 @@ begin
     gem.authors = ["Claudio Baccigalupo"]
     gem.rubyforge_project = "yesradio"
     gem.add_development_dependency "cucumber"
+    gem.add_dependency "nokogiri", ">=1.3.2"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::RubyforgeTasks.new do |rubyforge|
