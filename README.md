@@ -50,7 +50,7 @@ http://rdoc.info/projects/claudiob/yesradio
 
 ## History ##
 
-v0.1.1  2009/09/17
+v0.1.2  2009/09/17
         Changed REXML with Nokogiri for XML parsing
 
 v0.1.1  2009/09/15
