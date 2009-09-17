@@ -3,7 +3,7 @@
 
 require 'cgi'
 require 'net/http'
-require 'rexml/document'
+require 'nokogiri'
 
 require 'station'
 require 'song'
@@ -130,10 +130,10 @@ module Yesradio
     res = Net::HTTP.start(uri.host, uri.port) { |http|
       http.request(req)
     }
-    doc = REXML::Document.new res.body
-    return if doc.elements[xml_element].nil?
-    doc.elements.collect(xml_element) do |element|
-      eval "#{item_class}.new(element)"
+    doc = Nokogiri::XML res.body
+    return if doc.xpath(xml_element).empty?
+    doc.xpath(xml_element).collect do |element|    
+      eval "Yesradio::#{item_class}.new(element)"
     end
   end
   

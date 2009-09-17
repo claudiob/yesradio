@@ -19,8 +19,8 @@ module Yesradio
     private
 
     def get_element_child(element, child, type = :text)
-      return if element.nil? || element.elements[child].nil?
-      child = element.elements[child][0].to_s
+      return if element.nil? || element.xpath(child).empty?
+      child = element.xpath(child).text.to_s
       return case type
         when :int then child.to_i
         when :float then child.to_f 
