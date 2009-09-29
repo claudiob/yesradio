@@ -20,17 +20,17 @@ http://rdoc.info/projects/claudiob/yesradio
 ### To show details of 'WFNX' radio ###
 
     require 'yesradio'
-    Yesradio::get_station "WFNX"
+    Yesradio::get_station :name => "WFNX"
 
 ### To show log of tracks played on 'WFNX' radio ###
 
     require 'yesradio'
-    Yesradio::get_log "WFNX"
+    Yesradio::get_log :name => "WFNX"
 
 ### To show recent tracks played on 'WFNX' radio ###
 
     require 'yesradio'
-    Yesradio::get_recent "WFNX"
+    Yesradio::get_recent :name => "WFNX"
 
 ### To show a chart of popular Rock songs ###
 
@@ -49,6 +49,9 @@ http://rdoc.info/projects/claudiob/yesradio
 
 
 ## History ##
+
+v0.1.3  2009/09/29
+        Fixed wrong example in README
 
 v0.1.2  2009/09/17
         Changed REXML with Nokogiri for XML parsing
